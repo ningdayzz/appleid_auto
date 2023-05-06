@@ -4,9 +4,7 @@
 
 ### 环境需求
 
-后端运行基于Docker和Python，虽然脚本可以检测环境并自动安装，但我们强烈建议先手动安装好环境。
-
-Python版本：3.7+ 需要安装pip。
+后端运行基于Docker，安装脚本会自动检测Docker是否安装。
 
 ### Selenium
 
@@ -25,6 +23,8 @@ SE\_VNC\_VIEW\_ONLY=1  表示VNC仅允许查看，不允许操作。\
 SE\_NODE\_MAX\_SESSIONS=10  表示最多允许10个会话数。\
 4444端口用于执行任务和面板，5900端口用于VNC。
 
+VNC默认密码secret
+
 如需在ARM设备上使用，请参阅[seleniarm/standalone-chromium](https://hub.docker.com/r/seleniarm/standalone-chromium)
 
 #### 集群（grid）
@@ -40,8 +40,11 @@ bash <(curl -Ls https://raw.githubusercontent.com/pplulee/appleid_auto/backend/b
 ```
 
 安装时按照提示输入参数即可。\
-默认会以**appleauto**为服务名部署一个systemctl的服务。\
-****部署完成后可通过**systemctl status appleauto**查看服务状态。
+默认会以**appleauto**为容器名部署一个Docker容器。\
+部署完成后可通过**docker logs appleauto**查看管理容器日志。\
+通过**docker ps | grep apple-auto | awk '{print $1}' | xargs docker logs $1**查看后端容器日志。
 
-使用**journalctl -u appleauto**可以查看日志，筛选日志的方法请自行搜索。
+
+
+
 

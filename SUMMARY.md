@@ -21,3 +21,4 @@
 ## API文档 <a href="#api" id="api"></a>
 
 * [分享页API](api/fen-xiang-ye-api.md)
+* [V2Board知识库调用](api/v2board-zhi-shi-ku-tiao-yong.md)
