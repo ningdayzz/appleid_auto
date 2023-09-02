@@ -251,8 +251,8 @@ class vi_vn:
         self.CurrentAccount = "Tài khoản hiện tại:"
         self.invalidProxyType = "Loại proxy không hợp lệ"
         self.failOnSavingScreenshot = "Không thể lưu ảnh chụp màn hình của trang lỗi"
-        self.screenshotSaved = "Screenshot of error page saved to /app/error.html and /app/error.png, " \
-                               "please contact the developer"        
+        self.screenshotSaved = "Đã lưu ảnh chụp màn hình của trang lỗi vào /app/error.html và /app/error.png, " \
+                               "Vui lòng liên hệ nhà phát triển"        
         self.getIPFail = "Không thể lấy địa chỉ IP hiện tại"
         self.updateFail = "Cập nhật tài khoản thất bại"
         self.getAPIFail = "Lấy cấu hình từ API thất bại"
